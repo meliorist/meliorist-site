@@ -1,0 +1,20 @@
+{
+  "_comment": "Example WordPress plugin update manifest. Your plugin's updater reads this file to learn the latest version and where to download the zip. Replace the example entry with your real plugin(s). Update 'version' and 'download_url' each time you publish a new zip into this folder.",
+  "plugins": {
+    "meliorist-example-plugin": {
+      "name": "Meliorist Example Plugin",
+      "slug": "meliorist-example-plugin",
+      "version": "1.0.0",
+      "download_url": "https://meliorist.com/plugins/meliorist-example-plugin-1.0.0.zip",
+      "requires": "6.0",
+      "tested": "6.5",
+      "requires_php": "7.4",
+      "last_updated": "2026-06-30",
+      "homepage": "https://meliorist.com",
+      "author": "Meliorist",
+      "sections": {
+        "description": "Example entry. Replace with your plugin details."
+      }
+    }
+  }
+}

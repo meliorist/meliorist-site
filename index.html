@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meliorist — Data Consulting for Nonprofits</title>
+  <meta name="description" content="Meliorist is a technology consulting company helping nonprofit organizations with data analysis and data science." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fbf7f0;
+      --bg-warm: #f4ead9;
+      --card: #fffdf9;
+      --ink: #3a3329;
+      --ink-soft: #6b6253;
+      --accent: #c2683a;
+      --accent-deep: #a4542c;
+      --sage: #6f8466;
+      --line: #e7dcc8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; line-height: 1.15; }
+    a { color: var(--accent-deep); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header { padding: 28px 0; }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .brand { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.45rem; letter-spacing: -0.01em; }
+    .brand .dot { color: var(--accent); }
+    .nav a.cta {
+      background: var(--accent); color: #fff; text-decoration: none;
+      padding: 10px 18px; border-radius: 999px; font-weight: 500; font-size: 0.95rem;
+      transition: background .2s;
+    }
+    .nav a.cta:hover { background: var(--accent-deep); }
+
+    /* Hero */
+    .hero { padding: 60px 0 70px; }
+    .hero h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); letter-spacing: -0.02em; max-width: 16ch; }
+    .hero p.lead { font-size: 1.2rem; color: var(--ink-soft); max-width: 56ch; margin-top: 22px; }
+    .hero .actions { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; text-decoration: none; font-weight: 500;
+      padding: 14px 26px; border-radius: 999px; transition: all .2s;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-deep); }
+    .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent-deep); }
+    .eyebrow {
+      display: inline-block; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--sage); margin-bottom: 18px;
+    }
+
+    /* Sections */
+    section { padding: 26px 0; }
+    .band { background: var(--bg-warm); border-radius: 28px; padding: 50px 44px; margin: 18px 0; }
+    .band h2 { font-size: clamp(1.7rem, 3.5vw, 2.2rem); margin-bottom: 14px; }
+    .band p { color: var(--ink-soft); max-width: 62ch; }
+
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+      padding: 28px 24px;
+    }
+    .card .ico { font-size: 1.6rem; margin-bottom: 12px; }
+    .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .card p { color: var(--ink-soft); font-size: 0.98rem; }
+
+    .section-head { text-align: center; max-width: 60ch; margin: 0 auto 4px; }
+    .section-head h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+    .section-head p { color: var(--ink-soft); margin-top: 12px; }
+
+    /* Contact */
+    .contact { text-align: center; padding: 70px 0 30px; }
+    .contact h2 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); }
+    .contact p { color: var(--ink-soft); margin: 16px auto 30px; max-width: 50ch; }
+    .email-pill {
+      display: inline-block; background: var(--card); border: 1.5px solid var(--line);
+      border-radius: 999px; padding: 16px 32px; font-size: 1.15rem; font-weight: 500;
+      text-decoration: none; color: var(--ink); transition: all .2s;
+    }
+    .email-pill:hover { border-color: var(--accent); color: var(--accent-deep); }
+
+    footer { border-top: 1px solid var(--line); margin-top: 50px; padding: 30px 0; }
+    footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; color: var(--ink-soft); font-size: 0.9rem; }
+
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      .band { padding: 36px 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Meliorist<span class="dot">.</span></div>
+      <a class="cta" href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="eyebrow">Data consulting for nonprofits</span>
+      <h1>Turning your data into better outcomes.</h1>
+      <p class="lead">
+        Meliorist is a technology consulting company built specifically for nonprofit
+        organizations. We help mission-driven teams make sense of their data — through
+        thoughtful analysis and practical data science that supports the work you already do.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Start a conversation</a>
+        <a class="btn btn-ghost" href="#services">See how we help</a>
+      </div>
+    </section>
+
+    <section class="wrap" id="services">
+      <div class="section-head">
+        <h2>How we help</h2>
+        <p>We meet your organization where it is — no jargon, no oversized tooling, just clear answers you can act on.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="ico">📊</div>
+          <h3>Data analysis</h3>
+          <p>Reporting, dashboards, and program insights that help you understand impact and tell your story to funders and boards.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🔬</div>
+          <h3>Data science</h3>
+          <p>Predictive models, segmentation, and forecasting tailored to nonprofit realities — donor retention, demand planning, and more.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🧰</div>
+          <h3>Data infrastructure</h3>
+          <p>Cleaning, integrating, and organizing the data scattered across your databases, spreadsheets, and tools into one reliable foundation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="band">
+        <h2>Built for the way nonprofits actually work</h2>
+        <p>
+          Nonprofits run lean, juggle many systems, and rarely have a dedicated data team.
+          Meliorist fills that gap. We bring the technical depth of a data science practice
+          with the patience and budget-awareness that mission-driven work requires — so the
+          insights land, the tools get used, and your team is left more capable than before.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact">
+      <h2>Let's talk about your data.</h2>
+      <p>Tell us a bit about your organization and what you're trying to understand. We'll reply personally.</p>
+      <a class="email-pill" href="mailto:contact@meliorist.com">contact@meliorist.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="yr"></span> Meliorist — Data consulting for nonprofits</span>
+      <span>contact@meliorist.com</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
