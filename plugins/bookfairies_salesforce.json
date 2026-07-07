@@ -1,0 +1,21 @@
+{
+	"name": "Bookfairies Salesforce Integration",
+	"version": "1.90",
+	"download_url": "https://www.meliorist.com/plugins/bookfairies_salesforce/bookfairies_salesforce.zip",
+
+	"homepage": "https://www.meliorist.com/",
+	"requires": "5.0",
+	"tested": "5.7.2",
+	"last_updated": "2026-07-07",
+	"upgrade_notice": "Add new multiple copies form, change handling of pickups to prevent scheduling for existing shifts",
+
+	"author": "Stephan Fopeano",
+	"author_homepage": "https://www.meliorist.com/",
+
+	"sections": {
+		"description": "Salesforce integration for The Book Fairies Website",
+		"installation": "Installation instructions",
+		"changelog": "Changelog: <p>1.90 - Add new multiple copies form, change handling of pickups to prevent scheduling for existing shifts</p>",
+		"custom_section": "For use by The Book Fairies"
+	}
+}
